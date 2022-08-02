@@ -9,99 +9,69 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
     <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
     
-    <header>
-      <div> 
-        <h1><a href=" ">Super Ahorro</a></h1>
-        <a href="index.html">Inicio</a>
-        <a href="pag_super.html">Supermercados</a>
-        <a href="pag_produ.html">Productos</a>
-        <a href="pag_formu.html">Contacto</a>
-       </div>
-    </header>
+  </head>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Superahorro</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="pag_super.html">Supermercados<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="pag_produ.html">Productos<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="pag_formu.html">Contacto<span class="sr-only">(current)</span></a>
+        </li>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+    </ul>
+    </div>
+  </nav>
 
-    <div>
+  <div class="row justify-content-center align-items-center h-100"> 
+      <div class="col-sm-6" id="contact-form"> 
         <h1>Formulario de contacto</h1>
         <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
-
-        <form>
-          <p>
-            <label>Nombre</label>
-            <input
-              type="text"
-              name="introducir_nombre"
-              id="nombre"
-              required="obligatorio"
-              placeholder="Escribe tu nombre"
-            />
-          </p>
-
-          <p>
-            <label>Email</label>
-            <input
-              type="email"
-              name="introducir_email"
-              id="email"
-              required="obligatorio"
-              placeholder="Escribe tu Email"
-            />
-          </p>
-
-          <p>
-            <label>Teléfono </label>
-            <input
-              type="tel"
-              name="introducir_telefono"
-              id="telefono"
-              placeholder="Escribe tu teléfono"
-            />
-          </p>
-
-          <p>
-            <label>Sitio web </label>
-            <input
-              type="url"
-              name="introducir_website"
-              id="website"
-              placeholder="Escribe la URL de tu web"
-            />
-          </p>
-
-          <p>
-            <label>Asunto</label>
-            <input
-              type="text"
-              name="introducir_asunto"
-              id="assunto"
-              required="obligatorio"
-              placeholder="Escribe un asunto"
-            />
-          </p>
-
-          <p>
-            <label >Mensaje</label>
-            <textarea
-              name="introducir_mensaje"
-              class="texto_mensaje"
-              id="mensaje"
-              required="obligatorio"
-              placeholder="Deja aquí tu comentario..."
-            ></textarea>
-          </p>
-
-          <button>
-            <p>Enviar</p>
-          </button>
-          <a href="index.html">
-            <input>
-          </a>
-          <p>
-            <span> * </span>los campos son obligatorios.
-          </p>
-        </form>
-      </div>
+        <form> 
+          <div class="form-group"> 
+              <label for="contact-name">Nombre</label> 
+              <input type="text" name="introducir_nombre" class="form-control" id="contact-name" 
+              required="obligatorio" placeholder="Tu Nombre"> 
+          </div> 
+          <div class="form-group"> 
+              <label for="contact-email">Email</label> 
+              <input type="email" name="introducir_mail" class="form-control" id="contact-email" 
+              required="obligatorio" placeholder="Tu Email"> 
+          </div> 
+          <div class="form-group"> 
+              <label for="contact-phone">Teléfono</label> 
+              <input type="tel" name="introducir_telefono" class="form-control" id="contact-phone" 
+              required="obligatorio" placeholder="Tu Teléfono"> 
+          </div>
+          <div class="form-group"> 
+            <label for="contact-email">Mensaje</label> 
+            <textarea type="mensaje" name="introducir_mensaje" class="form-control" id="contact-mensaje" 
+            required="obligatorio" placeholder="Deja aqui tu mensaje"> 
+            </textarea>
+          </div> 
+          <div class="btn-group"> 
+            <button type="button" class="btn btn-outline-secondary">Enviar</button> 
+            <button type="button" class="btn btn-outline-secondary">Limpiar</button> 
+          </div> 
+        </form> 
+      </div> 
+    </div> 
 
       <footer>          
         <div>
@@ -127,5 +97,4 @@
       <script
        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
       </script>
-    </body>
 </html>
