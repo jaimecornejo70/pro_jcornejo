@@ -9,40 +9,52 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
     <link rel="stylesheet" href="css/main.css" />
-    <script type="text/javascript">
-      window.onload=function(){alert('Bienvenido a esta pagina');}
-    </script>
+   
+   <script type="text/javascript">
+      window.onload=function(){alert('Bienvenido a esta pagina');
+      }
+      function Mycolor() {
+      var element = document.getElementById("myID");
+      element.style.backgroundColor='#00CCFF';
+      }
+      function Otrocolor() {
+      var element = document.getElementById("myID");
+      element.style.backgroundColor='';
+      }
+      </script>
   </head>
   <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="#">Superahorro</a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="pag_super.html">Supermercados<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="pag_produ.html">Productos<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="pag_formu.html">Contacto<span class="sr-only">(current)</span></a>
-          </li>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-        </form>
-      </ul>
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="pag_super.html">Supermercados<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="pag_produ.html">Productos<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="pag_formu.html">Contacto<span class="sr-only">(current)</span></a>
+            </li>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button type="button" class="btn btn-primary">Buscar</button>
+          </form>
+          </ul>
       </div>
-    </nav>
+  </nav>
     <main>
-      <div class="container">
+    <br>  
+    <div class="container" id="myID" onmouseenter="Mycolor()" onmouseleave="Otrocolor()">
+        <br>
         <p class="shadow-lg p-3 mb-5 bg-white rounded">
           Somos un supermercado que solo vende productos que las grandes empresas dan como perdida por la cercania de los productos a 
           la fecha de vencimiento, problemas de etiquitado, devoluciones de clientes u otros motivos que obligan a las grnades empresas
@@ -52,21 +64,17 @@
           Ayudamos a que miles de familias puedan hacer rendir su presupuesto y comprar alimentos de calidad, regístrate y forma
           parte de nuestro club de socios....
         </p>
-          <div class="row" style="color:aqua;">
-            <div class="col-lg-3"></div>
-            <div class="col-lg-6"><img src="images/logo_marca.png" style="max-width:100%;height:auto;"/></a></div>
-            
-          </div>  
-            <br>
-          
-          <div class="row" style="color:rgb(250, 26, 26);">
-            <div class="col-5"></div>
-            <div class="col-7"><a href=" " role="button" class="btn btn-lg btn-primary">Regístrate aquí !</a></div>
-            
-          </div>  
-            
-      </div>
-             
+        <div class="row">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-6"><img src="images/logo_marca.png" style="max-width:100%;height:auto;"></div>
+        </div>  
+        <br>
+    </div>
+      <br>
+    <div class="row">
+      <div class="col-5"></div>
+      <div class="col-7"><a href=" " role="button" class="btn btn-lg btn-primary">Regístrate aquí !</a></div>
+    </div>     
          
       <aside>
         <div>
