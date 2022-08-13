@@ -10,21 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/carousel.css" /> 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <script type="text/javascript">
-      window.onload=function(){alert('Bienvenido a esta pagina');
-      }
-      function Mycolor() {
-      var element = document.getElementById("myID");
-      element.style.backgroundColor='#00CCFF';
-      }
-      function Otrocolor() {
-      var element = document.getElementById("myID");
-      element.style.backgroundColor='';
-      }
-    </script>
+    
   </head>
   <body>
   
@@ -54,7 +41,7 @@
           </ul>
       </div>
   </nav>
-    <main >
+    <main>
     <br>  
     <div class="container" id="myID" onmouseenter="Mycolor()" onmouseleave="Otrocolor()">
         <br>
@@ -73,25 +60,34 @@
         </div>  
         <br>
     </div>
-      <br>
-    <div class="row">
+     
+    
+    <div class="container">
+      <div class="row">
       <div class="col-5"></div>
-      <div class="col-7"><a href=" " role="button" class="btn btn-lg btn-primary">Regístrate aquí !</a></div>
-    </div>     
-         
-      <aside>
-        <div>
-          <h2>Links de interés</h2>
-            <ul>  
-              <li> <a href="https://www.sernac.cl">Servicio nacional de consumidores</a></li>
-              <li> <a href="https://www.odecu.cl">Organización de consumidores y usuario</a></li>
-              <li> <a href="https://www.desarrollosocialyfamilia.cl">Ministerio del desarrollo y familia</a></li>
-            </ul>
-        </div>
-      </aside> 
-       
-    </main>
+      <div class="col-7"><a href="pag_formu.html" role="button" class="btn btn-lg btn-primary">Regístrate aquí !</a></div>
+      <br>
+    </div>
+  </div>     
+   </main>
 
+<div class="container mt-5" >
+
+  <div class="row">
+    <div class="col-4">
+      <img src="images/sernac.png" style="max-width:100%;height:auto;">
+       <div class="text-center"><a href="https://www.sernac.cl">Servicio nacional de consumidores</a></div>
+    </div>
+    <div class="col-4">
+      <img src="images/odecu.jpg" style="max-width:100%;height:auto;">
+      <div class="text-center"><a href="https://www.odecu.cl">Organización de consumidores y usuario</a></div>
+    </div>
+    <div class="col-4">
+      <img src="images/mideplan.png" style="max-width:100%;height:auto;">
+      <div class="text-center"><a href="https://www.desarrollosocialyfamilia.cl">Ministerio del desarrollo y familia</a></div>
+    </div>
+  </div>
+  </div>
     <div class="wrapper">
       <div class="carousel owl-carousel">
         <div class="card card-1">
@@ -109,29 +105,7 @@
       
       </div>
     </div>
-    <script>
-      $(".carousel").owlCarousel({
-        margin:10,
-        loop:true,
-        autoplay:true,
-        autoplayTimeout: 2000,
-        autoplayHoverPause:true,
-        responsive:{
-          0:{
-            items:1,
-            nav:false
-          },
-          600:{
-            items:1,
-            nav:false
-          },
-          1000:{
-            items:1,
-            nav:false
-          }
-        }
-      });
-    </script>
+    
     <footer>          
       <div>
         <h2>Información de la página</h2>
@@ -155,6 +129,42 @@
     </script> 
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+      window.onload=function(){alert('Bienvenido a esta pagina');
+      }
+      function Mycolor() {
+      var element = document.getElementById("myID");
+      element.style.backgroundColor='#00CCFF';
+      }
+      function Otrocolor() {
+      var element = document.getElementById("myID");
+      element.style.backgroundColor='';
+      }
+    </script>
+    <script>
+      $(".carousel").owlCarousel({
+        margin:10,
+        loop:true,
+        autoplay:true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause:true,
+        responsive:{
+          0:{
+            items:1,
+            nav:false
+          },
+          600:{
+            items:1,
+            nav:false
+          },
+          1000:{
+            items:1,
+            nav:false
+          }
+        }
+      });
     </script>
   </body>
 </html>
